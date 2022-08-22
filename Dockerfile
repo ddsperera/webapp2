@@ -1,4 +1,4 @@
-FROM  centos:latest
+FROM  ubuntu:latest
 MAINTAINER ddsperera1417@gmail.com
 RUN apt-get -y update
 RUN apt install -y httpd \
