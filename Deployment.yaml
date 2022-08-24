@@ -1,19 +1,19 @@
 kind: Deployment
 apiVersion: apps/v1
 metadata:
-   name: ddsperera
+   name: webapp
 spec:
    replicas: 2
    selector:      # tells the controller which pods to watch/belong to
     matchLabels:
-     app: ddsperera
+     app: webapp
    template:
       metadata:
         labels:
-          app: ddsperera
+          app: webapp
       spec:
        containers:
-        - name: ddsperera
+        - name: webapp
           image: ddsperera/devops-pipeline
           imagePullPolicy: Always
           ports:
