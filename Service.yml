@@ -3,7 +3,7 @@ apiVersion: v1
 metadata:
   name: ddsperera
   labels:
-    app: mrdevops
+    app: ddsperera
 spec:
   ports:
     - port: 8080                               
