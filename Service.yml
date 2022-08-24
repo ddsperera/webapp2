@@ -1,14 +1,14 @@
 kind: Service                             
 apiVersion: v1
 metadata:
-  name: ddsperera
+  name: webapp
   labels:
-    app: ddsperera
+    app: webapp
 spec:
   ports:
     - port: 8080                               
       targetPort: 80                    
       nodePort: 31200
   selector:
-    app: ddsperera
+    app: webapp
     type: LoadBalancer                   
